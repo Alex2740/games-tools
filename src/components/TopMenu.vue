@@ -1,0 +1,143 @@
+<template>
+  <nav
+    class="
+      relative
+      flex
+      bg-white
+      float-right
+      mt-4
+      mr-8
+      text-gray-300
+      rounded-bl-3xl
+      overflow-hidden
+    "
+  >
+    <div class="flex items-center justify-center w-18 h-18 p-4 bg-primary text-white font-bold cursor-pointer">
+        <span>PRO</span>
+    </div>
+    <div class="w-18 h-18 p-4 hover:text-secondary transition-colors duration-500 cursor-pointer">
+      <div id="moon" @click="activateDarkMode()">
+        <MoonIcon></MoonIcon>
+      </div>
+      <div id="sun" @click="deactivateDarkMode()" class="hidden">
+        <SunIcon></SunIcon>
+      </div>
+    </div>
+    <div class="w-18 h-18 p-4 hover:text-secondary transition-colors duration-500 cursor-pointer">
+      <div id="dots" @click="openMenu()">
+        <DotsVerticalIcon></DotsVerticalIcon>
+      </div>
+      <div id="cross" @click="closeMenu()" class="hidden">
+        <XIcon></XIcon>
+      </div>
+    </div>
+    <div
+      id="menu"
+      class="
+        absolute
+        top-20
+        right-0
+        bg-yellow-500
+        text-white
+        w-screen-60
+        transform
+        scale-y-0
+        transition-transform
+        duration-500
+        origin-top
+      "
+    >
+      <div class="grid grid-cols-2 p-5">
+        <div>
+          <h3 class="border-b border-white mt-5 pb-4 font-extrabold">
+            Pokémon
+          </h3>
+          <ul class="my-5">
+            <li>Dynamax Expedition</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="border-b border-white mt-5 pb-4 font-extrabold">
+            League of Legends
+          </h3>
+          <ul class="my-5">
+            <li>Theorycraft</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-row justify-around bg-black bg-opacity-10 py-3 text-sm"
+      >
+        <span>Games Tools</span>
+        <div>Terms</div>
+        <div>Privacy</div>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+import {
+  MoonIcon,
+  SunIcon,
+  DotsVerticalIcon,
+  XIcon,
+} from "@heroicons/vue/solid";
+
+export default {
+  name: "TopMenu",
+  components: {
+    MoonIcon,
+    SunIcon,
+    DotsVerticalIcon,
+    XIcon,
+  },
+  setup() {
+    const openMenu = () => {
+      const menu = document.getElementById("menu");
+      const dots = document.getElementById("dots");
+      const cross = document.getElementById("cross");
+
+      menu.classList.remove("scale-y-0");
+      menu.classList.add("scale-y-100");
+
+      dots.classList.add("hidden");
+      cross.classList.remove("hidden");
+    };
+
+    const closeMenu = () => {
+      const menu = document.getElementById("menu");
+      const dots = document.getElementById("dots");
+      const cross = document.getElementById("cross");
+
+      menu.classList.remove("scale-y-100");
+      menu.classList.add("scale-y-0");
+
+      dots.classList.remove("hidden");
+      cross.classList.add("hidden");
+    };
+
+    const activateDarkMode = () => {
+      document.documentElement.classList.add("dark");
+      document.getElementById("moon").classList.add("hidden");
+      document.getElementById("sun").classList.remove("hidden");
+    };
+
+    const deactivateDarkMode = () => {
+      document.documentElement.classList.remove("dark");
+      document.getElementById("moon").classList.remove("hidden");
+      document.getElementById("sun").classList.add("hidden");
+    };
+
+    return {
+      openMenu,
+      closeMenu,
+      activateDarkMode,
+      deactivateDarkMode,
+    };
+  },
+};
+</script>
+
+<style>
+</style>
