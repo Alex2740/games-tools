@@ -9,10 +9,9 @@
       mr-8
       text-gray-300
       rounded-bl-3xl
-      overflow-hidden
     "
   >
-    <div class="flex items-center justify-center w-18 h-18 p-4 bg-primary text-white font-bold cursor-pointer">
+    <div class="flex items-center justify-center w-18 h-18 p-4 bg-primary text-white font-bold cursor-pointer rounded-bl-3xl">
         <span>PRO</span>
     </div>
     <div class="w-18 h-18 p-4 hover:text-secondary transition-colors duration-500 cursor-pointer">
