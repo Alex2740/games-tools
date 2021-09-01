@@ -7,7 +7,17 @@ module.exports = {
     extend: {
       colors: {
         primary: 'rgb(85, 190, 240)',
-        secondary: 'rgb(29, 29, 31)'
+        secondary: 'rgb(29, 29, 31)',
+        neutral: {
+          '100': 'hsl(0, 0%, 100%)',
+          '200': 'hsl(220, 14%, 96%)',
+          '800': 'black',
+          '900': 'black'
+        },
+        accent: {
+          '1': 'hsl(199, 83.8%, 63.7%)',
+          '2': 'rgb(245, 158, 11)'
+        }
       },
       spacing: {
         'screen-60': '60vw',

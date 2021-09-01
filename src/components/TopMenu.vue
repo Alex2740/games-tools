@@ -3,7 +3,7 @@
     class="
       relative
       flex
-      bg-white
+      bg-neutral-100
       float-right
       mt-4
       mr-8
@@ -12,7 +12,7 @@
     "
   >
     <!--
-    <div class="flex items-center justify-center w-18 h-18 p-4 bg-primary text-white font-bold cursor-pointer rounded-bl-3xl">
+    <div class="flex items-center justify-center w-18 h-18 p-4 bg-accent-1 text-neutral-100 font-bold cursor-pointer rounded-bl-3xl">
         <span>PRO</span>
     </div>
     -->
@@ -38,8 +38,8 @@
         absolute
         top-20
         right-0
-        bg-yellow-500
-        text-white
+        bg-accent-2
+        text-neutral-100
         w-screen-60
         transform
         scale-y-0
@@ -50,7 +50,7 @@
     >
       <div class="grid grid-cols-2 p-5">
         <div>
-          <h3 class="border-b border-white mt-5 pb-4 font-extrabold">
+          <h3 class="border-b border-neutral-100 mt-5 pb-4 font-extrabold">
             Pokémon
           </h3>
           <ul class="my-5">
@@ -58,7 +58,7 @@
           </ul>
         </div>
         <div>
-          <h3 class="border-b border-white mt-5 pb-4 font-extrabold">
+          <h3 class="border-b border-neutral-100 mt-5 pb-4 font-extrabold">
             League of Legends
           </h3>
           <ul class="my-5">
