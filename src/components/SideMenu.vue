@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-col h-screen bg-neutral-100 text-neutral-500">
+  <nav class="flex flex-col h-screen bg-neutral-100 dark:bg-neutral-700 text-neutral-500 transition-colors duration-700">
     <router-link class="h-18 w-18 p-4 bg-accent-2 hover:bg-accent-1 text-neutral-100" to="/">
       <ChipIcon></ChipIcon>
     </router-link>

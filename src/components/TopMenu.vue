@@ -4,12 +4,15 @@
       fixed
       flex
       bg-neutral-100
+      dark:bg-neutral-700
       float-right
       top-4
       right-8
       text-neutral-500
       rounded-bl-3xl
       overflow-hidden
+      transition-colors
+      duration-500
     "
   >
     <!--
@@ -23,6 +26,7 @@
         h-18
         p-4
         hover:text-neutral-700
+        dark:hover:text-neutral-100
         transition-colors
         duration-500
         cursor-pointer
@@ -41,6 +45,7 @@
         h-18
         p-4
         hover:text-neutral-700
+        dark:hover:text-neutral-100
         transition-colors
         duration-500
         cursor-pointer
