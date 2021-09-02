@@ -1,8 +1,8 @@
 <template>
     <TopMenu></TopMenu>
-    <div>
+    <div class="flex flex-row">
         <SideMenu></SideMenu>
-        <div>
+        <div class="flex-grow">
             <slot></slot>
         </div>
     </div>

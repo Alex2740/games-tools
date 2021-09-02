@@ -1,12 +1,12 @@
 <template>
   <nav
     class="
-      relative
+      fixed
       flex
       bg-neutral-100
       float-right
-      mt-4
-      mr-8
+      top-4
+      right-8
       text-neutral-500
       rounded-bl-3xl
       overflow-hidden
