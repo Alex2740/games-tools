@@ -13,6 +13,7 @@
       overflow-hidden
       transition-colors
       duration-500
+      shadow-2xl
     "
   >
     <!--
