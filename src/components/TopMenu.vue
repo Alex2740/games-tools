@@ -7,7 +7,7 @@
       float-right
       mt-4
       mr-8
-      text-gray-300
+      text-neutral-500
       rounded-bl-3xl
     "
   >
@@ -16,7 +16,7 @@
         <span>PRO</span>
     </div>
     -->
-    <div class="w-18 h-18 p-4 hover:text-secondary transition-colors duration-500 cursor-pointer">
+    <div class="w-18 h-18 p-4 hover:text-neutral-700 transition-colors duration-500 cursor-pointer">
       <div id="moon" @click="activateDarkMode()">
         <MoonIcon></MoonIcon>
       </div>
@@ -24,7 +24,7 @@
         <SunIcon></SunIcon>
       </div>
     </div>
-    <div class="w-18 h-18 p-4 hover:text-secondary transition-colors duration-500 cursor-pointer">
+    <div class="w-18 h-18 p-4 hover:text-neutral-700 transition-colors duration-500 cursor-pointer">
       <div id="dots" @click="openMenu()">
         <DotsVerticalIcon></DotsVerticalIcon>
       </div>
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div
-        class="flex flex-row justify-around bg-black bg-opacity-10 py-3 text-sm"
+        class="flex flex-row justify-around bg-neutral-900 bg-opacity-10 py-3 text-sm"
       >
         <span>Games Tools</span>
         <div>Terms</div>
