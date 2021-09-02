@@ -105,7 +105,7 @@
         text-sm
       "
     >
-      <span>Games Tools</span>
+      <router-link to="/">Games Tools</router-link>
       <div>Terms</div>
       <div>Privacy</div>
     </div>

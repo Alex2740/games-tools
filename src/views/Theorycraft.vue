@@ -1,18 +1,24 @@
 <template>
-  Theorycraft
-  <div class="items-grid">
-      <div v-for="item in items" :key="item.id">
-        <img :src="imgItem(item)" :alt="item.name">
-      </div>
-  </div>
+    <AppLayout>
+    Theorycraft
+    <div class="items-grid">
+        <div v-for="item in items" :key="item.id">
+            <img :src="imgItem(item)" :alt="item.name">
+        </div>
+    </div>
+    </AppLayout>
 </template>
 
 <script>
+import AppLayout from '../layouts/AppLayout.vue'
 import { ref } from '@vue/reactivity'
 import versionsJSON from '../assets/datadragon/versions.json'
 
 export default {
     name: 'Theorycraft',
+    components: {
+        AppLayout
+    },
     setup() {
         document.title = "Theorycraft App"
 
