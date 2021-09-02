@@ -9,14 +9,25 @@
       mr-8
       text-neutral-500
       rounded-bl-3xl
+      overflow-hidden
     "
   >
     <!--
-    <div class="flex items-center justify-center w-18 h-18 p-4 bg-accent-1 text-neutral-100 font-bold cursor-pointer rounded-bl-3xl">
+    <div class="flex items-center justify-center w-18 h-18 p-4 bg-accent-1 text-neutral-100 font-bold cursor-pointer">
         <span>PRO</span>
     </div>
     -->
-    <div class="w-18 h-18 p-4 hover:text-neutral-700 transition-colors duration-500 cursor-pointer">
+    <div
+      class="
+        w-18
+        h-18
+        p-4
+        hover:text-neutral-700
+        transition-colors
+        duration-500
+        cursor-pointer
+      "
+    >
       <div id="moon" @click="activateDarkMode()">
         <MoonIcon></MoonIcon>
       </div>
@@ -24,7 +35,17 @@
         <SunIcon></SunIcon>
       </div>
     </div>
-    <div class="w-18 h-18 p-4 hover:text-neutral-700 transition-colors duration-500 cursor-pointer">
+    <div
+      class="
+        w-18
+        h-18
+        p-4
+        hover:text-neutral-700
+        transition-colors
+        duration-500
+        cursor-pointer
+      "
+    >
       <div id="dots" @click="openMenu()">
         <DotsVerticalIcon></DotsVerticalIcon>
       </div>
@@ -32,49 +53,55 @@
         <XIcon></XIcon>
       </div>
     </div>
-    <div
-      id="menu"
-      class="
-        absolute
-        top-20
-        right-0
-        bg-accent-2
-        text-neutral-100
-        w-screen-60
-        transform
-        scale-y-0
-        transition-transform
-        duration-500
-        origin-top
-      "
-    >
-      <div class="grid grid-cols-2 p-5">
-        <div>
-          <h3 class="border-b border-neutral-100 mt-5 pb-4 font-extrabold">
-            Pokémon
-          </h3>
-          <ul class="my-5">
-            <li>Dynamax Expedition</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="border-b border-neutral-100 mt-5 pb-4 font-extrabold">
-            League of Legends
-          </h3>
-          <ul class="my-5">
-            <li>Theorycraft</li>
-          </ul>
-        </div>
+  </nav>
+  <div
+    id="menu"
+    class="
+      absolute
+      top-28
+      right-8
+      bg-accent-2
+      text-neutral-100
+      w-screen-60
+      transform
+      scale-y-0
+      transition-transform
+      duration-500
+      origin-top
+    "
+  >
+    <div class="grid grid-cols-2 p-5">
+      <div>
+        <h3 class="border-b border-neutral-100 mt-5 pb-4 font-extrabold">
+          Pokémon
+        </h3>
+        <ul class="my-5">
+          <li>Dynamax Expedition</li>
+        </ul>
       </div>
-      <div
-        class="flex flex-row justify-around bg-neutral-900 bg-opacity-10 py-3 text-sm"
-      >
-        <span>Games Tools</span>
-        <div>Terms</div>
-        <div>Privacy</div>
+      <div>
+        <h3 class="border-b border-neutral-100 mt-5 pb-4 font-extrabold">
+          League of Legends
+        </h3>
+        <ul class="my-5">
+          <li>Theorycraft</li>
+        </ul>
       </div>
     </div>
-  </nav>
+    <div
+      class="
+        flex flex-row
+        justify-around
+        bg-neutral-900 bg-opacity-10
+        py-3
+        text-sm
+      "
+    >
+      <span>Games Tools</span>
+      <div>Terms</div>
+      <div>Privacy</div>
+    </div>
+  </div>
 </template>
 
 <script>
