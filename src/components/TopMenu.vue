@@ -84,7 +84,9 @@
           League of Legends
         </h3>
         <ul class="my-5">
-          <li>Theorycraft</li>
+          <li>
+            <router-link to='/lol/theorycraft'>Theorycraft</router-link>
+          </li>
         </ul>
       </div>
     </div>

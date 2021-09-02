@@ -11,6 +11,9 @@ export default {
   name: 'Home',
   components: {
     WebLayout
+  },
+  setup() {
+    document.title = "Games Tools"
   }
 }
 </script>

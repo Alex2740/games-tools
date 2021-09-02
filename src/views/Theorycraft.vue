@@ -14,6 +14,8 @@ import versionsJSON from '../assets/datadragon/versions.json'
 export default {
     name: 'Theorycraft',
     setup() {
+        document.title = "Theorycraft App"
+
         // Get the current version
         const version = versionsJSON[0]
 
