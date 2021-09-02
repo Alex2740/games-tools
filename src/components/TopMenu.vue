@@ -7,7 +7,7 @@
       dark:bg-neutral-700
       float-right
       top-4
-      right-8
+      right-4
       text-neutral-500
       rounded-bl-3xl
       overflow-hidden
